@@ -1,0 +1,200 @@
+/** -*- Mode:css; css-indent-offset:2; indent-tabs-mode:nil -*-
+ *
+ * Feedback Page - A tool to help users provide us with feedback
+ * Copyright (c) 2013 - Robinson Tryon <qubit@runcibility.com>
+ *
+ * This program is free software: you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http:www.gnu.org/licenses/>.
+ */
+
+body {
+  background-color: #F1F1F1;
+  font-family: Helvetica, FreeSans, sans-serif;
+}
+
+.typography {
+  margin: 0 auto;
+  width: 900px;
+  padding: 100px 5px 0;
+}
+
+.typography h1 {
+  border-bottom: 1px solid rgb(146, 226, 133);
+  padding: 0.2em 0px 0.1em 2px;
+  color: rgb(24, 163, 3);
+  font-weight: bold;
+  font-size: 1.4em;
+  text-shadow: 0px 1px 1px rgb(255, 255, 255);
+}
+
+.typography p {
+  text-align: justify;
+  line-height: 175%;
+  color: rgb(51, 51, 51);
+}
+
+.button {
+  display: block;
+  width: 385px;
+  height: 50px;
+  color: #FFF;
+  line-height: 50px;
+  padding: 0 5px 0 55px;
+  text-align: left;
+  font-size: 1.4em;
+  background-image: url(feedback.svg);
+  background-repeat: no-repeat;
+  margin: 0 0 5px;
+  float: left;
+  text-decoration: none;
+  border-radius: 3px;
+  background-color: #999;
+  border: 1px solid #777;
+}
+
+.characters {
+  display: none;
+  width: 390px;
+  height: 52px;
+  color: #666;
+  line-height: 70px;
+  font-size: 1em;
+  float: left;
+}
+
+.happy.initial {
+  background-color: #76AA6E;
+}
+
+.sad.initial {
+  background-color: #BA6262;
+}
+
+.happy:hover, .happy.active {
+  background-color: #43C330;
+  border: 1px solid #106802;
+}
+
+.tweet {
+  width: 195px;
+}
+
+.ask:hover, .bug:hover {
+  background-color: #666;
+  border: 1px solid #444;
+}
+
+.ask {
+  background-position: 0 -150px;
+}
+
+.bug {
+  background-position: 0 -200px;
+}
+
+.sad:hover, .sad.active {
+  background-color: #E91313;
+  border: 1px solid #870000;
+}
+
+.sad {
+  float: right;
+  background-position: 0 -50px;
+}
+
+.tweet {
+  float: right;
+  background-position: 0 -100px;
+  display: none;
+}
+
+.tweet:hover {
+  background-color: #1C99E0;
+  border: 1px solid #023F62;
+}
+
+.bug {
+  float: right;
+}
+
+textarea {
+  max-width: 888px;
+  min-width: 888px;
+  width: 888px;
+  min-height: 1.3em;
+  height: 3.9em;
+  margin: 5px 0;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  padding: 5px;
+  display: none;
+  clear: both;
+  border-radius: 3px;
+  background-color: #F8F8F8;
+}
+
+.feedback .happy-area {
+  border: 1px solid #106802;
+  color: #106802;
+}
+
+.feedback .sad-area {
+  border: 1px solid #870000;
+  color: #870000;
+}
+
+.feedback .sad-area:focus, .feedback .happy-area:focus {
+  background-color: #FFF;
+}
+
+.active {
+  display: block !important;
+}
+
+.left, .right {
+  width: 445px;
+  display: block;
+  background-color: #FFF;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+}
+
+.left p, .right p {
+  padding: 0 10px 0;
+}
+
+.left .button, .right .button {
+  margin: -1px -1px 15px -1px;
+}
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.light {
+  color: #666;
+  font-size: 0.8em;
+}
+
+.light a {
+  color: #666;
+  text-decoration: underline;
+}
+
+.light a:hover {
+  color: #106802;
+  text-decoration: underline;
+}
