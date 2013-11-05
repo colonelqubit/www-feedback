@@ -146,11 +146,13 @@ textarea {
 .feedback .happy-area {
   border: 1px solid #106802;
   color: #106802;
+  maxlength: 140;
 }
 
 .feedback .sad-area {
   border: 1px solid #870000;
   color: #870000;
+  maxlength: 140;
 }
 
 .feedback .sad-area:focus, .feedback .happy-area:focus {
