@@ -40,33 +40,44 @@ $('.sad').click(function(){$('.happy').removeClass('initial');$('.happy').remove
   <body>
     <div class="typography">
       <h1>Give Feedback</h1>
-      <p>Use Twitter <span class="light">(<a href="http://en.wikipedia.org/wiki/Twitter">What is Twitter?</a>)</span> to give us feedback. Click one of the two buttons below to start. <span class="light"><a target="_blank" href="http://twitter.com/search?q=%23happylibo%20OR%20%23sadlibo">Want to see other people's feedback first?</a></span></p>
+      <p>The LibreOffice Project loves to hear from users like you. Your comments and bug reports help us to improve our products and make them the best software available!</p>
+
+      <p>Would you like to...</p>
+
       <div class="feedback">
+
+        <div class="more">
+	  <div class="asklibreoffice">
+            <a class="button ask" href="http://ask.libreoffice.org">Ask a question</a>
+            <p>Unsure of a feature in LibreOffice? Get help from experienced users on the <em>Ask LibreOffice</em> site.</p>
+	  </div>
+
+	  <div class="bugreport">
+            <a class="button bug" href="http://www.libreoffice.org/get-help/bug/">Create a bug report</a>
+            <p>Having a specific problem, like a software crash or a missing feature? Report a bug to our developers.</p>
+	  </div>
+
+	  <div class="enhancementrequest">
+            <a class="button enhancement" href="http://www.libreoffice.org/get-help/bug/">File an enhancement request</a>
+            <p>Thinking of a new feature that would make LibreOffice even better than it is today? Let us know!</p>
+	  </div>
+	</div>
+
+        <h1>You can also &hellip;</h1>
+	<p>Use Twitter <span class="light">(<a href="http://en.wikipedia.org/wiki/Twitter">What is Twitter?</a>)</span> to give us feedback. Click one of the two buttons below to start. <span class="light"><a target="_blank" href="http://twitter.com/search?q=%23happylibo%20OR%20%23sadlibo">Want to see other people's feedback first?</a></span></p>
+
 	<a class="button happy initial" href="#">LibreOffice made me happy</a>
 	<a class="button sad initial" href="#">LibreOffice made me sad</a>
+
 	<textarea class="happy-area">Write your message here. Leave the following in your message: #happylibo</textarea>
 	<textarea class="sad-area">Write your message here. Leave the following in your message: #sadlibo</textarea>
 	<div class="characters"><strong>70</strong> characters left</div>
 	<a class="button tweet" href="#" title="Sign in to Twitter and post.">Tweet as &hellip;</a>
 	<div style="clear: both; width: 100%; height: 35px;">
         </div>
-        
-        <h1>You can also &hellip;</h1>
-        <div class="more">
-	  <div class="left">
-            <a class="button ask" href="http://ask.libreoffice.org">Ask a question</a>
-            <p>If you are unsure how a feature in LibreOffice works, you can get help from experienced users.</p>
-	  </div>
-
-	  <div class="right">
-            <a class="button bug" href="http://www.libreoffice.org/get-help/bug/">Create a bug report</a>
-            <p>If you have a specific problem, like a software crash or a missing feature, report a bug to our developers.</p>
-	  </div>
-
-	  <div style="clear: both;">
-	  </div>
-	</div>
       </div>
     </div>
+
+
   </body>
 </html>
