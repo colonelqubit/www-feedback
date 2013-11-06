@@ -33,6 +33,11 @@ $('.happy').click(function(){$('.sad').removeClass('initial');$('.sad').removeCl
 
 $('.sad').click(function(){$('.happy').removeClass('initial');$('.happy').removeClass('active');$('.happy-area').removeClass('active');$('.tweet').removeClass('active');$('.characters').removeClass('active');$('.sad').addClass('active');$('.sad-area').addClass('active');$('.tweet').addClass('active');$('.characters').addClass('active');$('.sad-area').focus(); return false;});
 
+// Populate our Bug Report button with any passed-in variables.
+var params = window.location.href.slice(window.location.href.indexOf('?'));
+var url = $('#bugbutton').attr('href');
+$('#bugbutton').attr('href', url + params);
+
 });
     </script>
   </head>
@@ -53,7 +58,7 @@ $('.sad').click(function(){$('.happy').removeClass('initial');$('.happy').remove
 	  </div>
 
 	  <div class="bugreport">
-            <a class="button bug" href="http://www.libreoffice.org/get-help/bug/">Create a bug report</a>
+            <a id="bugbutton" class="button bug" href="http://www.libreoffice.org/get-help/bug/">Create a bug report</a>
             <p>Having a specific problem, like a software crash or a missing feature? Report a bug to our developers.</p>
 	  </div>
 
