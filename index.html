@@ -34,9 +34,13 @@ $('.happy').click(function(){$('.sad').removeClass('initial');$('.sad').removeCl
 $('.sad').click(function(){$('.happy').removeClass('initial');$('.happy').removeClass('active');$('.happy-area').removeClass('active');$('.tweet').removeClass('active');$('.characters').removeClass('active');$('.sad').addClass('active');$('.sad-area').addClass('active');$('.tweet').addClass('active');$('.characters').addClass('active');$('.sad-area').focus(); return false;});
 
 // Populate our Bug Report button with any passed-in variables.
-var params = window.location.href.slice(window.location.href.indexOf('?'));
-var url = $('#bugbutton').attr('href');
-$('#bugbutton').attr('href', url + params);
+var param_index = window.location.href.indexOf('?');
+// Only try to add parameters if some have been passed-in.
+if(param_index > -1) {
+  var params = window.location.href.slice(window.location.href.indexOf('?'));
+  var url = $('#bugbutton').attr('href');
+  $('#bugbutton').attr('href', url + params);
+}
 
 });
     </script>
