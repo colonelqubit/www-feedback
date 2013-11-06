@@ -62,16 +62,6 @@ body {
   border: 1px solid #777;
 }
 
-.characters {
-  display: none;
-  width: 390px;
-  height: 52px;
-  color: #666;
-  line-height: 70px;
-  font-size: 1em;
-  float: left;
-}
-
 .happy.initial {
   background-color: #76AA6E;
 }
@@ -125,7 +115,7 @@ body {
 
 .tweet {
   float: right;
-  background-position: 0 -100px;
+  /*background-position: 0 -100px;  Don't show the Twitter icon anymore*/
   display: none;
 }
 
@@ -139,7 +129,7 @@ textarea {
   min-width: 888px;
   width: 888px;
   min-height: 1.3em;
-  height: 3.9em;
+  height: 8.9em;
   margin: 5px 0;
   font-size: 1.4em;
   font-family: sans-serif;
