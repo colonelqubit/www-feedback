@@ -25,7 +25,7 @@ body {
 .typography {
   margin: 0 auto;
   width: 900px;
-  padding: 100px 5px 0;
+  padding: 10px 5px 0;
 }
 
 .typography h1 {
@@ -79,27 +79,27 @@ body {
   width: 195px;
 }
 
-.ask:hover, .bug:hover {
+.ask:hover, .bug:hover, .enhancement:hover {
   background-color: #666;
   border: 1px solid #444;
 }
 
 /* These three buttons need to have smaller width -- auto-formatting doesn't work? */
 .ask, .bug, .enhancement {
-  width: 236px;
+  width: 226px;
 }
 
 .ask {
   background-position: 0 -150px;
+
 }
 
 .bug {
   background-position: 0 -200px;
 }
 
-/* There is no icon for an enhancement yet, but we'll add one soon */
 .enhancement {
-  background-position: 0 -200px;
+  background-position: 0 -100px;
   font-size: 1.0em;  
 }
 
@@ -214,4 +214,16 @@ textarea {
   background-color: #FFF;
   border-radius: 3px;
   border: 1px solid #CCC;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.community img {
+  width:370px;
+  height: auto;
+  float: right;
 }
